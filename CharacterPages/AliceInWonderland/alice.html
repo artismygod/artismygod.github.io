@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>test</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Character Pages</title>
+
+    <!-- Core CSS -->
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="../../vendor/fontawesome-pro/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-test
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+    <div class="container">
+        <a href="../../index.html" class="navbar-brand mx-auto">
+            <img class="my-2" src="../../img/logo.png" alt="">
+
+        </a>
+        <div class="container">        <h2 class="text-black-50 m-0">
+            <em>Smile & magie staat voor je klaar!</em>
+        </h2>
+        </div>
+    </div>
+
+</nav>
+
+<!-- Packages -->
+<section class="page-section bg-packages" style="padding: 5rem 0;">
+    <div class="container">
+        <h2 class="section-heading text-center text-white mb-5">Characters</h2>
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <div class="card card-pricing">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary mt-2 mb-0">Alice In Wonderland</h4>
+                        <hr class="mb-4 mt-2">
+                        <ul class="fa-ul pricing-list my-4">
+                            <li>
+                                <i class="fa-li far fa-check"></i>
+                                bla bla
+                            </li>
+                            <li class="text-muted">
+                                <i class="fa-li far fa-times"></i>
+                                bla bla
+                            </li>
+                            <li class="text-muted">
+                                <i class="fa-li far fa-times"></i>
+                                bla bla
+                            </li>
+                            <li class="text-muted">
+                                <i class="fa-li far fa-times"></i>
+                                bla bla
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+            <div class="col-lg-4 col-xl-5">
+                <div class="p-0 pl-xl-4 text-center">
+                    <img src="img/belle.svg" class="d-block mx-auto mb-4" style="height: 6rem" alt="">
+                    <h2>Ontmoet onze princessen</h2>
+                    <p class="mb-5">Onze entertainers bieden een unieke ervaring aan!</p>
+                    <a
+                            onclick="ga('send', 'event', {eventCategory: 'Contact', eventAction: 'Send', eventLabel: 'Email', eventValue: 50});" href="mailto:Info.smile.magie@gmail.com?subject=Ik wil graag een princess boeken!&body=Geef ons meer informatie over wanneer, waar en wie je wil boeken. Bedankt!" class="btn btn-primary btn-lg-custom text-white text-uppercase mb-5">Boek ons nu!</a>
+                    <p>Als je enige vragen hebt contacteer ons dan hier: <a href="mailto:Info.smile.magie@gmail.com">Info.smile.magie@gmail.com</a></p>
+                </div>
+            </div>
+</section>
+<!-- Bundle -->
+<script src="js/scripts.min.js"></script>
+
+
+<script src="../cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Smooth Scroll -->
+<script>
+    (function($) {
+        "use strict"; // Start of use strict
+        // Smooth scrolling using jQuery easing
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ?
+                    target :
+                    $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: (target.offset().top)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
+    })(jQuery); // End of use strict
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139556103-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-139556103-1');
+</script>
+
+
 </body>
+
+
 </html>
